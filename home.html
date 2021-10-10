@@ -11,6 +11,17 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="particle"></div>
+        <div class="particle leftSpin"></div>
+        <div class="particle"></div>
+        <div class="particle rightSpin"></div>
+        <div class="particle"></div>
+        <div class="particle leftSpin"></div>
+        <div class="particle"></div>
+        <div class="particle rightSpin"></div>
+        <div class="particle"></div>
+    </div>
     <div class="container">
         <button>
             <span></span>
@@ -74,9 +85,7 @@
             <filter id="goo">
                 <feGaussianBlur stdDeviation="10" />
                 <feColorMatrix values="1 0 0 0 0
-                0 1 0 0 0
-                                0 0 1 0 0 
-                                0 0 0 100 -15" />
+                0 1 0 0 0 0 0 1 0 0 0 0 0 100 -15" />
                 <feBlend in="SourceGraphic" />
             </filter>
         </defs>
