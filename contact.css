@@ -1,4 +1,4 @@
-wpcf7 .screen-reader-response {
+.wpcf7 .screen-reader-response {
     position: absolute;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
