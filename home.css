@@ -16,7 +16,7 @@ body {
     display: flex;
     padding: 100px;
     align-items: center;
-    background: #fff;
+    /* background: #fff; */
     top: 50%;
     bottom: 50%;
     left: 20%;
@@ -24,7 +24,7 @@ body {
     transform: translate(-50%, -50%) rotate(0deg);
     animation: rotate 20s linear infinite;
     /* amazing filter effects! */
-    filter: blur(10px) contrast(15);
+    filter: blur(1px) contrast(15);
 }
 
 /* .shadowLoader {
@@ -51,10 +51,12 @@ body {
 }
 
 .particle {
-    background: #000;
+    /* background: #000; */
+    background-color: cornsilk;
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    z-index: 2;
 }
 
 .particle:first-child,
@@ -166,7 +168,7 @@ button span {
     top: 50%;
     transform: translate(0, -50%);
     position: absolute;
-    background-color: black;
+    background-color: cornsilk;
     transition: .7s cubic-bezier(0, 2, .7, 2);
 }
 
@@ -231,7 +233,7 @@ button span:nth-child(11) {
 }
 
 p {
-    color: white;
+    color: black;
     font-size: 22px;
     z-index: 10;
     position: relative;
@@ -266,14 +268,5 @@ i {
     top: 0;
     left: 0;
     background: black;
-}
-
-.youtubeLabel {
-    color: white;
-    position: absolute;
-    padding: 15px;
-}
-
-.youtubeLabel a {
-    color: pink;
+    z-index: -1;
 }
