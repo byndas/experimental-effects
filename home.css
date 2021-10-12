@@ -19,6 +19,7 @@ body {
     background: #fff;
     top: 50%;
     bottom: 50%;
+    left: 20%;
     /* only works because position is absolute */
     transform: translate(-50%, -50%) rotate(0deg);
     animation: rotate 20s linear infinite;
@@ -224,8 +225,8 @@ p {
     transform: .5s;
 }
 
-p:hover {
-    color: gray;
+button:hover p {
+    font-size: 1.5em;
 }
 
 /* GOO BUTTONS */
