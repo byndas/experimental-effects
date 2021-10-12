@@ -51,8 +51,8 @@ body {
 }
 
 .particle {
-    /* background: #000; */
-    background-color: cornsilk;
+    background: #000;
+    /* background-color: cornsilk; */
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -168,7 +168,8 @@ button span {
     top: 50%;
     transform: translate(0, -50%);
     position: absolute;
-    background-color: cornsilk;
+    background-color: #000;
+    /* background-color: cornsilk; */
     transition: .7s cubic-bezier(0, 2, .7, 2);
 }
 
@@ -233,7 +234,8 @@ button span:nth-child(11) {
 }
 
 p {
-    color: black;
+    /* color: black; */
+    color: cornsilk;
     font-size: 22px;
     z-index: 10;
     position: relative;
@@ -244,7 +246,7 @@ button:hover p {
     font-size: 1.5em;
 }
 
-/* GOO BUTTONS */
+/* GOOEY BUTTONS */
 .button {
     position: relative;
     width: 50px;
@@ -264,9 +266,18 @@ i {
 /* MOUSE INTERACTIVE VECTOR FIELD */
 
 #canvas1 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    background: black;
+    background-color: cornflowerblue;
     z-index: -1;
+}
+
+#canvas2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: cornflowerblue;
+    /*filter: blur(2px) contrast(5);*/
+    z-index: -2;
 }

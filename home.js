@@ -1,3 +1,4 @@
+
 window.onload = function(){
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
@@ -18,9 +19,6 @@ window.addEventListener('mousemove', function(e){
     mouse.x = e.x;
     mouse.y = e.y;
 });
-
-
-
 class FlowFieldEffect {
     #ctx;
     #width;
