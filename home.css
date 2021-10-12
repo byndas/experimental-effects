@@ -27,20 +27,18 @@ body {
     filter: blur(10px) contrast(15);
 }
 
-.loader2 {
+/* .shadowLoader {
     position: absolute;
     display: flex;
     padding: 0px;
     align-items: center;
     background: transparent;
-    top: 55%;
-    /* bottom: 50%; */
-    left: 25%;
-    /* only works because position is absolute */
+    top: 50%;
+    bottom: 50%;
+    left: 20%;
     animation: rotate 20s linear infinite;
-    /* amazing filter effects! */
-    filter: blur(10px) contrast(15);
-}
+    filter: blur(20px) contrast(10);
+} */
 
 @keyframes rotate {
     from {
@@ -234,7 +232,7 @@ button span:nth-child(11) {
 
 p {
     color: white;
-    font-size: 12px;
+    font-size: 22px;
     z-index: 10;
     position: relative;
     transform: .5s;
@@ -259,4 +257,23 @@ i {
     font-size: 20px;
     z-index: 10;
     color: white;
+}
+
+/* MOUSE INTERACTIVE VECTOR FIELD */
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+}
+
+.youtubeLabel {
+    color: white;
+    position: absolute;
+    padding: 15px;
+}
+
+.youtubeLabel a {
+    color: pink;
 }
