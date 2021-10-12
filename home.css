@@ -7,7 +7,7 @@
 
 /* LIQUID LOADER ANIMATION */
 body {
-    /* prevents jumpy animation loop reset */
+    /* prevents jumpy animation loop */
     overflow: hidden;
 }
 
@@ -22,6 +22,21 @@ body {
     left: 20%;
     /* only works because position is absolute */
     transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 20s linear infinite;
+    /* amazing filter effects! */
+    filter: blur(10px) contrast(15);
+}
+
+.loader2 {
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    background: transparent;
+    top: 55%;
+    /* bottom: 50%; */
+    left: 25%;
+    /* only works because position is absolute */
     animation: rotate 20s linear infinite;
     /* amazing filter effects! */
     filter: blur(10px) contrast(15);
