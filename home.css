@@ -51,7 +51,8 @@ body {
 }
 
 .particle {
-    background: #000;
+    background-color: firebrick;
+    /* background-color: #000; */
     /* background-color: cornsilk; */
     height: 50px;
     width: 50px;
@@ -168,7 +169,8 @@ button span {
     top: 50%;
     transform: translate(0, -50%);
     position: absolute;
-    background-color: #000;
+    background-color: dimgray;
+    /* background-color: #000; */
     /* background-color: cornsilk; */
     transition: .7s cubic-bezier(0, 2, .7, 2);
 }
@@ -280,4 +282,14 @@ i {
     background-color: cornflowerblue;
     filter: blur(1px) contrast(1);
     z-index: -1;
+}
+
+#canvas3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
 }
