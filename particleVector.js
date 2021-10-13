@@ -1,4 +1,4 @@
-const canvas = document.getElementById("canvas3");
+const canvas = document.getElementById("particleVector");
 const ctx = canvas.getContext("2d"); // CTX MEANS CONTEXT
 ctx.canvas.width  = window.innerWidth;
 ctx.canvas.height = window.innerHeight;

@@ -1,6 +1,6 @@
 
 window.onload = function(){
-    const canvas = document.getElementById('canvas1');
+    const canvas = document.getElementById('mouseVector');
     const ctx = canvas.getContext('2d');
     
     canvas.width = window.innerWidth;

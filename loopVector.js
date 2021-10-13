@@ -1,5 +1,5 @@
 window.onload = function(){
-    const canvas = document.getElementById('canvas2');
+    const canvas = document.getElementById('loopVector');
     const ctx = canvas.getContext('2d');
     
     canvas.width = window.innerWidth;

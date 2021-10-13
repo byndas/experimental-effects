@@ -100,7 +100,7 @@
         </i>
     </div>
 
-    <!-- <div class="shadowLoader">
+    <div class="shadowLoader">
         <div class="particle"></div>
         <div class="particle leftSpin"></div>
         <div class="particle"></div>
@@ -110,18 +110,36 @@
         <div class="particle"></div>
         <div class="particle rightSpin"></div>
         <div class="particle"></div>
-    </div> -->
+    </div>
 
     <!-- STICKY BUBBLES FOOTER -->
+    <canvas id="canvasBg"></canvas>
+    <canvas id="canvas"></canvas>
 
-    <!-- MOUSE INTERACTIVE VECTOR FIELD -->
-    <!-- <canvas id='canvas1'></canvas> -->
-    <!-- <canvas id='canvas2'></canvas> -->
-    <canvas id='canvas3'></canvas>
+    <!-- VECTOR FIELDS -->
+    <canvas id='mouseVector'></canvas>
+    <!-- <canvas id='loopVector'></canvas> -->
+    <!-- <canvas id='particleVector'></canvas> -->
 
+    <script src="../mouseVector.js" async defer></script>
+    <!-- <script src="../particleVector.js" async defer></script> -->
+    <!-- <script src="../loopVector.js" async defer></script> -->
+    <script src="../bubbleFooter.js" async defer></script>
+    <footer>
+        <span>*** FOOTER TEXT HERE ***</span>
+    </footer>
+    <svg>
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGrphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
+                             0 1 0 0 0
+                             0 0 1 0 0
+                             0 0 0 30 -30" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
 </body>
-<script src="vectorAnime.js" async defer></script>
-<script src="home.js" async defer></script>
-<script src="particles.js" async defer></script>
 
 </html>
