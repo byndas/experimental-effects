@@ -274,13 +274,13 @@ i {
 
 /* VECTOR FIELDS */
 
-#mouseVector {
+/* #mouseVector {
     position: absolute;
     top: 0;
     left: 0;
     background-color: cornflowerblue;
     z-index: -1;
-}
+} */
 
 /* #loopVector {
     position: absolute;
@@ -288,7 +288,7 @@ i {
     left: 0;
     background-color: cornflowerblue;
     filter: blur(1px) contrast(1);
-    z-index: -1;
+    z-index: 10;
 } */
 
 /* #particleVector {
@@ -297,7 +297,7 @@ i {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10;
+    z-index: -1;
     pointer-events: none;
 } */
 
@@ -314,6 +314,7 @@ canvas {
 
 footer {
     position: absolute;
+    color: cornsilk;
     height: 50px;
     left: 0;
     bottom: 0;

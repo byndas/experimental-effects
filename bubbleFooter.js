@@ -19,23 +19,22 @@ function addBubble() {
     Bubbles.push(new Bubble('rgb(225, 194, 194', 1.8));
 }
 function addBgBubble() {
-    bgBubbles.push(new Bubble('rgb(255, 255, 255', 2.5));
+    bgBubbles.push(new Bubble('#ad0170', 2.5));
 }
 class Bubble {
     constructor(color, ySpeed) {
         this.radius = (Math.random() * 150) + 30;
         this.life = true;
         this.x = (Math.random() * window.innerWidth);
-        this.y = (Math.random() * 20) + window.innerHeight;
- + this.radius;
+        this.y = (Math.random() * 0.0000002) + window.innerHeight + this.radius;
         this.vy = ((Math.random() * 0.0002) + 0.001) + ySpeed;
         this.vr = 0;
         this.vx = (Math.random() * 4) - 2;
         this.color = color;
     }  
     update() {
-        this.vy += 0.00001; // velocity y-axis
-        this.vr += 0.02;
+        this.vy += 0.1; // velocity y-axis
+        this.vr += 0.2;
         this.y -= this.vy;
         this.x += this.vx;
         if (this.radius > 1) {
