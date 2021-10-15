@@ -1,22 +1,22 @@
 // canvas 1 
-const canvas = document.getElementById('canvas');
+const canvas = document.getElementById('bubbles');
 // gives access to all canvas built-in drawing methods
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 // canvas 2 
-const canvasBg = document.getElementById('canvasBg');
+const canvasBg = document.getElementById('bubblesBg');
 // gives access to all canvas built-in drawing methods
 const ctxBg = canvas.getContext('2d');
 canvasBg.width = window.innerWidth;
 canvasBg.height = window.innerHeight;
 
-let Bubbles = [];
+let bubbles = [];
 let bgBubbles = [];
 
 function addBubble() {
-    Bubbles.push(new Bubble('rgb(225, 194, 194', 1.8));
+    bubbles.push(new Bubble('rgb(225, 194, 194', 1.8));
 }
 function addBgBubble() {
     bgBubbles.push(new Bubble('#ad0170', 2.5));
@@ -52,10 +52,10 @@ class Bubble {
     }
 }
 function handleBubbles() {
-    for (let i = Bubbles.length - 1; i >= 0; i--) {
-        Bubbles[i].update();
-        if (!Bubbles[i].life) {
-            Bubbles.splice(i, 1);
+    for (let i = bubbles.length - 1; i >= 0; i--) {
+        bubbles[i].update();
+        if (!bubbles[i].life) {
+            bubbles.splice(i, 1);
         }
     }
     for (let i = bgBubbles.length - 1; i >= 0; i--) {
@@ -64,7 +64,7 @@ function handleBubbles() {
             bgBubbles.splice(i, 1);
         }
     }
-    if (Bubbles.length < (window.innerWidth / 4)) {
+    if (bubbles.length < (window.innerWidth / 4)) {
         addBubble();
     }
     if (bgBubbles.length < (window.innerWidth / 12)) {
@@ -81,8 +81,8 @@ function animate() {
     for (let i = bgBubbles.length - 1; i >= 0; i--) {
         bgBubbles[i].draw(ctxBg);
     }
-    for (let i = Bubbles.length - 1; i >= 0; i--) {
-        Bubbles[i].draw(ctx);
+    for (let i = bubbles.length - 1; i >= 0; i--) {
+        bubbles[i].draw(ctx);
     }
 
     requestAnimationFrame(animate);
@@ -95,6 +95,6 @@ window.addEventListener('resize', function() {
     canvas.height = window.innerHeight;
     canvasBg.width = window.innerWidth;
     canvasBg.height = window.innerHeight;
-    let Bubbles = [];
-    let bgBubbles = [];
+    bubbles = [];
+    bgBubbles = [];
 });
