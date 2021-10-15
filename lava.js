@@ -119,6 +119,7 @@ class Particle {
         this.y += this.weight;
     }
     draw() {
+        // lava color
         ctx.fillStyle = 'rba(128, 197, 222, 1)';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
