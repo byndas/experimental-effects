@@ -1,4 +1,4 @@
-const canvas = document.getElementById('lava');
+const canvas = document.getElementByName('body');
 // gives access to all canvas built-in drawing methods
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -24,7 +24,7 @@ class Button {
     }
     update() {
         let directionX = 2.2;
-        // if((collision detection) && (buttonn position)) {
+        // if((collision detection) && (button position)) {
         if ((mouse.x < this.x + this.width && 
             mouse.x > this.x && 
             mouse.y < this.y + this.height && 
@@ -33,7 +33,7 @@ class Button {
             (this.x > this.baseX - 50)) {
                // animate button to the left
                this.x -= directionX;
-               this.wid th += directionX
+               this.width += directionX
         }
         // else if (not colliding with mouse) &&
         //         (button is out of base position)
@@ -66,7 +66,7 @@ createButtons();
 function drawButtons() {
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].update();
-        // buttons[i].draw();
+        buttons[i].draw();
     }
 }
 

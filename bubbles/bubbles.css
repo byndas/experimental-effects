@@ -13,6 +13,7 @@ body {
     overflow: hidden;
     /* background-color: #ad0170; */
     background-color: transparent;
+    filter: url('#goo');
 }
 
 .loader {
@@ -274,24 +275,24 @@ i {
 
 /* VECTOR FIELDS */
 
-/* #mouseVector {
+#mouseVector {
     position: absolute;
     top: 0;
     left: 0;
     background-color: cornflowerblue;
     z-index: -1;
-} */
+}
 
-/* #loopVector {
+#loopVector {
     position: absolute;
     top: 0;
     left: 0;
     background-color: cornflowerblue;
     filter: blur(1px) contrast(1);
     z-index: 10;
-} */
+}
 
-/* #particleVector {
+#particleVector {
     position: absolute;
     top: 0;
     left: 0;
@@ -299,7 +300,7 @@ i {
     height: 100%;
     z-index: -1;
     pointer-events: none;
-} */
+}
 
 .bubbler {
     position: absolute;
