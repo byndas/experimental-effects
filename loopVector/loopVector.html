@@ -7,13 +7,13 @@
     <title>EFFECTS</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="loopVector.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 </head>
 
 <body>
     <!-- LOADER -->
-    <div class="loader">
+    <!-- <div class="loader">
         <div class="particle"></div>
         <div class="particle leftSpin"></div>
         <div class="particle"></div>
@@ -23,9 +23,9 @@
         <div class="particle"></div>
         <div class="particle rightSpin"></div>
         <div class="particle"></div>
-    </div>
+    </div> -->
     <!-- SHADOW LOADER -->
-    <div class="shadowLoader">
+    <!-- <div class="shadowLoader">
         <div class="particle"></div>
         <div class="particle leftSpin"></div>
         <div class="particle"></div>
@@ -35,7 +35,7 @@
         <div class="particle"></div>
         <div class="particle rightSpin"></div>
         <div class="particle"></div>
-    </div>
+    </div> -->
     <!-- RIPPLE BUTTONS -->
     <!-- <div class="container">
         <button class="ripple">
@@ -116,7 +116,7 @@
          <canvas id="bubblesBg" class="bubbler"></canvas> -->
     <!-- VECTOR FIELDS -->
     <!-- <canvas id='mouseVector'></canvas> -->
-    <!-- <canvas id='loopVector'></canvas> -->
+    <canvas id='loopVector'></canvas>
     <!-- <canvas id='particleVector'></canvas> -->
     <!-- <canvas id='lava'>
         <div class="textBox">
@@ -143,7 +143,7 @@
 
     <!-- SCRIPTS -->
     <!-- <script src="../mouseVector.js" async defer></script> -->
-    <!-- <script src="../loopVector.js" async defer></script> -->
+    <script src="loopVector.js" async defer></script>
     <!-- <script src="../particleVector.js" async defer></script> -->
     <!-- <script src="../bubbles.js" async defer></script> -->
     <!-- <script src="../lava.js" async defer></script> -->
@@ -154,7 +154,7 @@
     <svg>
         <defs>
             <filter id="goo">
-                <feGaussianBlur in="SourceGrphic" stdDeviation="10" result="blur" />
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
                 <feColorMatrix in="blur" mode="matrix" values=" 1 0 0 0 0
                                 0 1 0 0 0
                                 0 0 1 0 0

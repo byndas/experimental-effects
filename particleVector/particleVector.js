@@ -1,3 +1,5 @@
+// checkout particle.js
+
 const canvas = document.getElementById("particleVector");
 const ctx = canvas.getContext("2d"); // CTX MEANS CONTEXT
 ctx.canvas.width  = window.innerWidth;
